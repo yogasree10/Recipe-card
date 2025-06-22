@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kunafa Chocolate Recipe</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="recipe-card">
+    <h1>Kunafa Chocolate</h1>
+    <img src="kunafa.png" alt="Kunafa Chocolate" height="250px" width="100px"/>
+ <div class="info">
+      <p><strong>Prep Time:</strong> 20 minutes</p>
+      <p><strong>Cook Time:</strong> 30 minutes</p>
+      <p><strong>Serves:</strong> 4-6 people</p>
+    </div>
+    <button id="toggle-ingredients">Show Ingredients</button>
+    <ul id="ingredients" class="collapsible hidden">
+      <li>200g Kunafa dough</li>
+      <li>100g Milk Chocolate</li>
+      <li>50g Dark Chocolate</li>
+      <li>50g Butter</li>
+      <li>1/4 cup Heavy Cream</li>
+      <li>1/2 cup Crushed Pistachios</li>
+      <li>1/4 cup Sugar</li>
+      <li>1 teaspoon Rose Water</li>
+      <li>1 tablespoon Orange Blossom Water (optional)</li>
+      <li>1 tablespoon Honey</li>
+    </ul>
+
+    <button id="toggle-steps">Show Steps</button>
+    <ol id="steps" class="collapsible hidden">
+      <li>Preheat your oven to 180°C (350°F).</li>
+      <li>Melt the milk and dark chocolate together with butter and cream in a double boiler or microwave.</li>
+      <li>Mix in the sugar, rose water, and orange blossom water (if using). Stir until smooth.</li>
+      <li>Layer the kunafa dough in a baking dish, pressing it down firmly.</li>
+      <li>Pour half of the melted chocolate mixture over the kunafa dough and spread evenly.</li>
+      <li>Top with a layer of crushed pistachios.</li>
+      <li>Add the remaining chocolate mixture and bake for 25-30 minutes until the kunafa turns golden brown and crispy.</li>
+      <li>Once baked, drizzle honey over the top and let it rest for 10 minutes before serving.</li>
+    </ol>
+    <div class="controls">
+      <button id="start-cooking">Start Cooking</button>
+      <button id="next-step" disabled>Next Step</button>
+      <div id="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+      <div id="timer"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
